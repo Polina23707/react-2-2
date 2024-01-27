@@ -1,7 +1,4 @@
 const IconSwitch = (props) => {
-  // console.log(props);
-  // console.log(props.icon);
-
   function onSwitch() {
     props.onSwitch();
   }

@@ -1,10 +1,7 @@
 import React from "react";
 import products from './Products';
 import IconSwitch from "./IconSwitch";
-import ListView from "./ListView";
-import CardsView from "./CardsView";
 import View from "./View";
-
 
 class Store extends React.Component {
   constructor(props) {
@@ -26,11 +23,11 @@ class Store extends React.Component {
 
   render() {
     return(
-      <div>
-        <div>
+      <div className="main">
+        <div className="header">
           <IconSwitch icon={this.state.view} onSwitch={this.onSwitch}/>
         </div>
-        <div>
+        <div className="content">
           <View view={this.state.view} products={this.products}/>
         </div>
       </div>
